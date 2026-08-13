@@ -2,11 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Api_getway" />
+      </profile>
       <profile name="Annotation profile for Usage_monitoring_service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="Usage_monitoring_service" />
@@ -18,10 +25,19 @@
         <module name="Component_service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="API_getway" target="17" />
+      <module name="Component_service (1)" target="17" />
+      <module name="Component_service (2)" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="API_getway" options="-parameters" />
+      <module name="Api_getway" options="-parameters" />
       <module name="Component_service" options="-parameters" />
+      <module name="Component_service (1)" options="-parameters" />
+      <module name="Component_service (2)" options="-parameters" />
       <module name="Consumble_Management_Service" options="-parameters" />
       <module name="Driver_service" options="-parameters" />
       <module name="Insurance_Management_Service" options="-parameters" />
