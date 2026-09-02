@@ -25,7 +25,7 @@ public class Component {
     private String brand;
 
     @Column (name = "model",nullable = false)
-    private String Brand;
+    private String model;
 
     @Column(name = "registration_number", unique = true)
     private String regNumber;

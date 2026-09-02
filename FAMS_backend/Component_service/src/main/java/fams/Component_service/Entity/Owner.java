@@ -4,7 +4,9 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 
+@Data
 @Entity
 @Table(name = "owner")
 public class Owner {
@@ -21,7 +23,7 @@ public class Owner {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "contactNumber")
+    @Column(name = "contact_number")
     private String contactNumber;
 
 }
