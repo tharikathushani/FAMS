@@ -17,20 +17,20 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
+        <module name="Service_Booking_Management_service" />
         <module name="Usage_monitoring_service" />
         <module name="Maintanace_management_service" />
         <module name="Insurance_Management_Service" />
-        <module name="Service_Booking_Management_service" />
-        <module name="Driver_service" />
         <module name="Consumble_Management_Service" />
       </profile>
-      <profile name="Annotation profile for Component_service" enabled="true">
+      <profile name="Annotation profile for Driver_service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
+        <module name="Driver_service" />
         <module name="Component_service" />
       </profile>
     </annotationProcessing>

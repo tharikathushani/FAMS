@@ -30,4 +30,5 @@ public class ComponentDto {
     private String ownerId;
     private String ownerTypeId;
 
+
 }
