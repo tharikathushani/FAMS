@@ -14,7 +14,7 @@ import java.util.Set;
 public class Driver {
     @Id
     @Column(name = "driver_id")
-    private String id;
+    private String driverId;
 
     @Column(name = "driver_name")
     private String driverName;

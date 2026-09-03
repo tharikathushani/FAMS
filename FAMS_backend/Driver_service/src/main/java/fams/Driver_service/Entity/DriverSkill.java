@@ -9,8 +9,8 @@ import lombok.Data;
 public class DriverSkill {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "driver_skill_id")
+    private Long driverSkillId;
 
     @ManyToOne
     @JoinColumn(name="driver_id", nullable=false)
