@@ -10,7 +10,7 @@ public class DriverSkill {
 
     @Id
     @Column(name = "driver_skill_id")
-    private Long driverSkillId;
+    private String driverSkillId;
 
     @ManyToOne
     @JoinColumn(name="driver_id", nullable=false)

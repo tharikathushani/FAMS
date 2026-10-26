@@ -28,7 +28,7 @@ public class Driver {
     @Column(name = "contact_number")
     private String contactNum;
 
-    @Column(name = "licence_number")
+    @Column(name = "licence_expired_date")
     private Date licenceExpDate;
 
     @OneToMany(mappedBy = "driver", cascade = CascadeType.ALL)

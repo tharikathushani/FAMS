@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class DriverSkilDto {
 
-    private Long driverSkillId;
     private String driverId;
     private String skillId;
 }

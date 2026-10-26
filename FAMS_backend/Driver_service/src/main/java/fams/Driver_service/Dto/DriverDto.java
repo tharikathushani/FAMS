@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.Set;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,4 +17,7 @@ public class DriverDto {
     private String address;
     private String contactNum;
     private Date licenceExpDate;
+
+    private Set<String> skillIds;
+
 }
